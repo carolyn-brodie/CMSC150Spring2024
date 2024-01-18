@@ -8,10 +8,10 @@
 
 ## readlines() returns the entire file but as a list
 
-# file = open("./myData/firstFile.txt", "r")
-# fileList = file.readlines()
-# print(fileList)
-# file.close()
+file = open("./myData/firstFile.txt", "r")
+fileList = file.readlines()
+print(fileList)
+file.close()
 
 ##get a list of strings without the new line character
 # file = open("./myData/firstFile.txt", "r")
