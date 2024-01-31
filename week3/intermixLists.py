@@ -1,12 +1,16 @@
 ##intermix two lists
 
-list1 = [0,1,2,3,4]
-list2 = [9,8,7,6,5]
+list1 = [0,5,8,9]
+list2 = [1,3,9,12]
 
 mixedList = []
-for count in range(len(list1)):
-    mixedList.append(list1[count])
-    mixedList.append(list2[count])
+for index in range(len(list1)):
+    if list1[index] < list2[index]:
+        mixedList.append(list1[index])
+        # list1.remove(list1[index])
+    else:
+        mixedList.append(list2[index])
+        # list2.remove(list2[index])
 
 print(mixedList)
 

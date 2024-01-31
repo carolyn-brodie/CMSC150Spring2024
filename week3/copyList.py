@@ -9,5 +9,8 @@ for item in theList:
 
 print(theList)
 print(copyOfTheList)
+theList[1] = 100
+print(theList)
+print(copyOfTheList)
 
 ##How might we modify this to make a copy with only the String variables?
