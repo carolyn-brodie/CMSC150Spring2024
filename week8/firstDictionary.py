@@ -8,3 +8,4 @@ print(numberOfSpecies[animal.index("reptile")])
 ##Better way is with a dictionary
 animalDict = { "mammal" : 428, "bird" : 784, "reptile" : 311, "fish" : 1154 }
 print(animalDict["reptile"])
+print("hi")
