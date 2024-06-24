@@ -52,8 +52,9 @@ class MyGame(arcade.Window):
         self.set_mouse_visible(False)
 
         # Load sounds. Sounds from kenney.nl
-        self.gun_sound = arcade.load_sound(":resources:sounds/hurt5.wav")
-        self.hit_sound = arcade.load_sound(":resources:sounds/hit5.wav")
+        #self.gun_sound = arcade.load_sound(":resources:sounds/hurt5.wav")
+        self.gun_sound = arcade.load_sound("realistic-shot-81087.mp3", False)
+        self.hit_sound = arcade.load_sound("realistic-shot-81087.mp3", False)
 
         arcade.set_background_color(arcade.color.AMAZON)
 
@@ -134,6 +135,7 @@ class MyGame(arcade.Window):
         # Position the bullet
         bullet.center_x = self.player_sprite.center_x
         bullet.bottom = self.player_sprite.top
+        arcade.play_sound(self.gun_sound)
 
         # Add the bullet to the appropriate lists
         self.bullet_list.append(bullet)
